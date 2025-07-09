@@ -129,7 +129,7 @@ Alt full config:
        {%- render 'product_labels',on:'singe' -%}
        {%- render 'p_group_btns',main_click:main_click,pr_media:pr_media -%}
       </div>
-  {%- when '4' -%}
+  <!-- {%- when '4' -%}
       <div class="col-12 col_thumb">
          <div class="p-thumb fade_flick_{{fade_num}} p-thumb{{se_id |default:call_cl}} images sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}} nt_slider pr_carousel" data-flickityt4s-js='{"initialIndex": ".media_id_{{featured_media.id}}","fade":{{fade}},"draggable":"{{drag}}","cellSelector": ".p-item:not(.is_varhide)","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : {{dragThreshold}},"pageDots": false,"rightToLeft": {{rtl}} }'>
                {%- for media in pr_media -%}{%- assign alt = media.alt -%}
@@ -143,7 +143,68 @@ Alt full config:
       </div>
       <div class="col-12 col_nav nav_{{nav_img_pr}}">
          <div class="p-nav {{e_imgnv}} row equal_nt {{img_size_thumb}} {{ratio_img_thumb}} position_{{img_pos_thumb}} nt_slider pr_carousel" data-flickityjs='{"initialIndex": ".media_id_{{featured_media.id}}","cellSelector": ".n-item:not(.is_varhide)","cellAlign": "left","asNavFor": ".p-thumb{{se_id}}","wrapAround": false,"draggable": "{{drag}}","autoPlay": 0,"prevNextButtons": 0,"percentPosition": 1,"imagesLoaded": 0,"pageDots": 0,"groupCells": {{groupCells}},"rightToLeft": {{rtl}},"contain":  1,"freeScroll": 0}'><div class="n-item col-3"><img class="w__100 nt_bg_lz" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{media_img.first.width}}%20{{media_img.first.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" alt="{{product.title | escape}}"></div></div>
+      </div> -->
+      {%- when '4' -%}
+  <div class="col-12 col_thumb">
+    <!-- Main slider -->
+    <div
+      class="p-thumb fade_flick_{{fade_num}} p-thumb{{se_id | default:call_cl}} images sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}} nt_slider pr_carousel"
+      data-flickityt4s-js='{"initialIndex": ".media_id_{{featured_media.id}}","fade":{{fade}},"draggable":"{{drag}}","cellSelector": ".p-item:not(.is_varhide)","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false,"lazyLoad": 0,"dragThreshold": {{dragThreshold}},"pageDots": false,"rightToLeft": {{rtl}} }'
+    >
+      {%- for media in pr_media -%}
+        {%- assign alt = media.alt -%}
+        {%- if alt contains 't4_360' -%}{%- break -%}{%- endif -%}
+        {%- render 'media', media: media, alt: alt, eq_imgtb: eq_imgtb, values: values, ops_name: ops_name, ops_name_1: ops_name_1, ops_name_2: ops_name_2, ops_name_3: ops_name_3 -%}
+      {%- endfor -%}
+    </div>
+
+    {%- render 'product_labels', on: 'singe', product: product -%}
+    {%- render 'p_group_btns', main_click: main_click, pr_media: pr_media, se_id: se_id -%}
+
+    <!--  ↓ Add this thumbnail nav block ↓  -->
+    <div class="col-12 col_nav nav_{{ nav_img_pr }}">
+      <div
+        class="p-nav {{ e_imgnv }} row equal_nt {{ img_size_thumb }} {{ ratio_img_thumb }} position_{{ img_pos_thumb }} nt_slider pr_carousel"
+        data-flickityjs='{
+          "initialIndex": ".media_id_{{ featured_media.id }}",
+          "cellSelector": ".n-item:not(.is_varhide)",
+          "cellAlign": "left",
+          "asNavFor": ".p-thumb{{ se_id | default:call_cl }}",
+          "wrapAround": false,
+          "draggable": "{{ drag }}",
+          "autoPlay": 0,
+          "prevNextButtons": 0,
+          "percentPosition": 1,
+          "imagesLoaded": 0,
+          "pageDots": 0,
+          "groupCells": {{ groupCells }},
+          "rightToLeft": {{ rtl }},
+          "contain": 1,
+          "freeScroll": 0
+        }'
+      >
+        {%- for media in pr_media -%}
+          {%- assign thumb = media.preview_image -%}
+          <div class="n-item col-3" data-mdid="{{ media.id }}">
+            <img
+              class="w__100 nt_bg_lz"
+              src="data:image/svg+xml,%3Csvg%20viewBox='0 0 {{ thumb.width }} {{ thumb.height }}'%3E%3C/svg%3E"
+              data-src="{{ thumb | img_url: img_size_thumb }}"
+              alt="{{ media.alt | default: product.title }}"
+            >
+          </div>
+        {%- endfor -%}
       </div>
+      <button type="button" aria-label="Previous" class="btn_pnav_prev pe_none">
+        <i class="las la-angle-up"></i>
+      </button>
+      <button type="button" aria-label="Next" class="btn_pnav_next pe_none">
+        <i class="las la-angle-down"></i>
+      </button>
+    </div>
+  </div>
+
+
   {%- when '6' -%}
       <div class="col-12">
          <div class="p-thumb fade_flick_{{fade_num}} p-thumb{{se_id |default:call_cl}} images sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}} nt_slider pr_carousel" data-flickityt4s-js='{"initialIndex": ".media_id_{{featured_media.id}}","fade":{{fade}},"draggable":"{{drag}}","cellSelector": ".p-item:not(.is_varhide)","cellAlign": "center","wrapAround": true,"autoPlay": false,"prevNextButtons":true,"adaptiveHeight": true,"imagesLoaded": false, "lazyLoad": 0,"dragThreshold" : {{dragThreshold}},"pageDots": false,"rightToLeft": {{rtl}} }'>
