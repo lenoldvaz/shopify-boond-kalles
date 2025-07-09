@@ -1163,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Gift message element not found");
       }
     } else {
-      console.log("Gift wrap container not found");
+      //console.log("Gift wrap container not found");
     }
   }
 
@@ -1171,7 +1171,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type === 'childList') {
-        console.log("DOM mutation detected");
+       // console.log("DOM mutation detected");
         findElements();
       }
     });
