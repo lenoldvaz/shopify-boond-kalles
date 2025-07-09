@@ -24,18 +24,32 @@
           "disabled": true,
           "settings": {}
         },
-        "custom_liquid_xqmR6w": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div class=\"ctm-desk\"><div class=\"trustpilot-above-title\">\n  <span class=\"reviews\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/material-symbols--star_1.png?v=1726818435\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/material-symbols--star_1.png?v=1726818435\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/material-symbols--star_1.png?v=1726818435\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/material-symbols--star_1.png?v=1726818435\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/material-symbols--star_1.png?v=1726818435\">\n    <span class=\"product_review_content\">257+ delighted customers</span>\n  </span>\n</div>\n\n\n<style>\n.reviews {\n  display: flex;\n  align-items: center;\n  gap: 0px;\n  font-family: system-ui;\n  font-size: 13px;\n}\n.reviews img {\n  width: 18px;\n  position: relative;\n  height: auto;\n}\nspan.product_review_content {\n    text-decoration: underline;\n    margin-left: 5px;\n    font-family: Inter;\n    font-size: 10px;\n    font-weight: 400;\n    line-height: 12.1px;\n    text-align: left;\n\n}\n.reviews a {\n  text-decoration: underline;\n  color: black;\n}\n.trustpilot-above-title {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  color: black;\n  margin-bottom: 15px;\n}\n  @media (max-width: 767px) {\n    .trustpilot-above-title {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: flex-start;\n  color: black;\n  margin-bottom: 15px;\n}\n  }\n</style>\n\n<div class=\"main-price-variant\">\n  <div class=\"ctm-price\">\n    {{ product.metafields.custom.product_price }}\n  </div>\n  <div class=\"ctm-var-main\">\n    <div class=\"ctm-variant\">\n      {{ product.metafields.custom.product_variant }}\n    </div>\n  </div>\n</div>\n\n<style>\n  .main-price-variant{\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    margin-bottom: 24px;\n  }\n  .ctm-price{\n    font-size: 16px;\n    font-weight: 700;\n    line-height: 19.36px;\n    text-align: left;\n  }\n  .ctm-variant{\n    text-align: right;\n    padding: 2px 8px 0px 8px;\n    gap: 8px;\n    border-radius: 50px;\n    opacity: 0px;\n    background: #FFBEB2;\n    font-size: 12px;\n  }\n.ctm-product .ctm-desk{\n  display: block;\n}\n@media(max-width:768px){\n.ctm-product .ctm-desk{\n  display: none;\n}\n}\n</style>\n</div>"
-          }
-        },
         "custom_liquid_UnDBxa": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "custom_liquid": "<hr style=\"margin: 20px 0 25px;\">\n\n <div class=\"ctm-meta\">{{ product.metafields.custom.product_short_highlight | metafield_tag }}</div>\n\n<style>\n.ctm-meta strong{\n  color: #B20000;\n}\n.ctm-meta{\nfont-size: 14px;\ntext-align: justify;\nfont-family: Poppins;\nfont-weight: 400;\nline-height: 21px;\ncolor: black;\n}\n</style>"
+          }
+        },
+        "selluxe_icons_with_text_kH6Ezh": {
+          "type": "selluxe_icons_with_text",
+          "settings": {
+            "bullet_icon_1": "shopify://shop_images/Star_1.png",
+            "bullet_svg_1": "",
+            "bullet_text_color_1": "#000000",
+            "bullet_icon_2": "shopify://shop_images/Star_1.png",
+            "bullet_svg_2": "",
+            "bullet_text_color_2": "#000000",
+            "bullet_icon_3": "shopify://shop_images/Star_1.png",
+            "bullet_svg_3": "",
+            "bullet_text_color_3": "#000000",
+            "icon_size": 16,
+            "bullet_font_size": 14,
+            "bullet_icon_4": "shopify://shop_images/Star_1.png",
+            "bullet_svg_4": "",
+            "bullet_text_color_4": "#000000",
+            "bullet_icon_5": "shopify://shop_images/Star_1.png",
+            "bullet_svg_5": "",
+            "bullet_text_color_5": "#000000"
           }
         },
         "frm": {
@@ -61,22 +75,6 @@
             "txt_sale": "1",
             "rating": false,
             "review_liquid": ""
-          }
-        },
-        "selluxe_icons_with_text_kH6Ezh": {
-          "type": "selluxe_icons_with_text",
-          "settings": {
-            "bullet_icon_1": "shopify://shop_images/Star_1.png",
-            "bullet_svg_1": "",
-            "bullet_text_color_1": "#000000",
-            "bullet_icon_2": "shopify://shop_images/Star_1.png",
-            "bullet_svg_2": "",
-            "bullet_text_color_2": "#000000",
-            "bullet_icon_3": "shopify://shop_images/Star_1.png",
-            "bullet_svg_3": "",
-            "bullet_text_color_3": "#000000",
-            "icon_size": 16,
-            "bullet_font_size": 14
           }
         },
         "also_see_JDdVyB": {
@@ -174,11 +172,10 @@
       "block_order": [
         "title",
         "judge_me_reviews_preview_badge_eybVeB",
-        "custom_liquid_xqmR6w",
         "custom_liquid_UnDBxa",
+        "selluxe_icons_with_text_kH6Ezh",
         "frm",
         "pricereview",
-        "selluxe_icons_with_text_kH6Ezh",
         "also_see_JDdVyB",
         "size",
         "tab_ByL6Tz",
@@ -196,8 +193,7 @@
         ".jdgm-preview-badge {display: block; margin-left: 0px; margin-bottom: 16px;}",
         ".flickityt4s-prev-next-button {opacity: 1 !important;}",
         ".ctm-product .ctm-mob {display: none !important;}",
-        ".sp-single-4 .sp-pr-gallery + .product-thumbnails,.thumb_bottom .product-thumbnails {  display: flex !important;  flex-direction: row !important;  justify-content: center;  margin-top: 12px;}",
-        "@media (max-width: 768px) {.ctm-product .ctm-mob {display: block !important; },.sp-single-4 .sp-pr-gallery + .product-thumbnails, .thumb_bottom .product-thumbnails {flex-direction: row !important; width: 100%; overflow-x: auto;}}"
+        "@media (max-width: 768px) {.ctm-product .ctm-mob {display: block !important; }}"
       ],
       "settings": {
         "IpFinder_api_key": "2drrfwafetmhb4tb",
