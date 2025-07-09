@@ -359,7 +359,7 @@
           "type": "image",
           "settings": {
             "image_source": "upload",
-            "image": "shopify://shop_images/Frame_279.png",
+            "image": "shopify://shop_images/comparison.png",
             "metafield_namespace": "",
             "metafield_key": ""
           }
