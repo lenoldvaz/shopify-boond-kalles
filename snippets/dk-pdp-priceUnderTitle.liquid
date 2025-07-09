@@ -1,0 +1,46 @@
+<div class="main-price-variant">
+ 
+  <div class="ctm-price" id="current-variant-price">
+    From {{ product.selected_or_first_available_variant.price | money }}
+  </div>
+  <div class="ctm-var-main">
+    <div class="ctm-variant" id="variant-title">
+      {{ product.selected_or_first_available_variant.title | split: '/' | first | strip }}
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var variantRadios = document.querySelectorAll('input[name="id"]');
+  var priceElement = document.getElementById('current-variant-price');
+  var variantTitleElement = document.getElementById('variant-title');
+
+  variantRadios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      var selectedVariantId = this.value;
+      var selectedVariant = {{ product.variants | json }}
+        .find(function(variant) { return variant.id == selectedVariantId; });
+
+      if (selectedVariant) {
+        // Update price
+        priceElement.textContent = formatMoney(selectedVariant.price);
+
+        // Update variant title (showing only the part before the slash)
+        var shortVariantTitle = selectedVariant.title.split('/')[0].trim();
+        variantTitleElement.textContent = shortVariantTitle;
+      }
+    });
+  });
+
+  function formatMoney(cents) {
+    return (cents / 100).toLocaleString('en-US', {
+      style: 'currency',
+      currency: '{{ shop.currency }}'
+    });
+  }
+});
+</script>

@@ -1,0 +1,177 @@
+
+<section class="section dk-custom-tabs container">
+  <div class="dk-tabs-5 section">
+    <div class="dk-tab-customize">
+      {% for block in section.blocks %}
+        <div class="dk-tablinks-cus{% if forloop.first %} active{% endif %}" onclick="openTab(event, 'tab-{{ forloop.index }}')"{% if forloop.first %} id="dk-tab-cus-active"{% endif %}>
+          {{ block.settings.tab_heading }}
+        </div>
+      {% endfor %}
+    </div>
+    <!-- Tab content -->
+    {% for block in section.blocks %}
+      <div id="tab-{{ forloop.index }}" class="dk-tabcontent-cus{% if forloop.first %} active{% endif %}">
+        {% case block.settings.content_type %}
+          {% when 'description' %}
+            {{ product.description }}
+          {% when 'metafield' %}
+            {{ product.metafields[block.settings.metafield_namespace][block.settings.metafield_key] | metafield_tag }}
+          {% when 'custom' %}
+            {{ block.settings.custom_content }}
+        {% endcase %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<div class="divider"></div>
+
+<style>
+  .divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+  }
+  .dk-tab-customize {
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+   
+  }
+  .dk-tab-customize div {
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 11px 16px;
+    transition: 0.3s;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.33000001311302185px;
+    text-align: center;
+  }
+  .dk-tab-customize div{
+    border-bottom: 1px solid #D9D9D9;
+  }
+  
+  .dk-tab-customize div:hover {
+    border-bottom: 1px solid #b20000;
+  }
+  .dk-tab-customize div.active {
+    border-bottom: 1px solid #b20000;
+  }
+  .dk-tabcontent-cus {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    font-size: 12px;
+  }
+  .dk-tabcontent-cus.active {
+    display: block;
+  }
+  .dk-tablinks-cus {
+    font-size: 20px; 
+  }
+</style>
+
+<script>
+  function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("dk-tabcontent-cus");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].classList.remove("active");
+    }
+    tablinks = document.getElementsByClassName("dk-tablinks-cus");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+    document.getElementById(cityName).style.display = "block";
+    document.getElementById(cityName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+  }
+  document.getElementById("dk-tab-cus-active").click();
+</script>
+
+{% schema %}
+{
+  "name": "Custom Tabs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Product Information"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Tab Heading",
+          "default": "Tab"
+        },
+        {
+          "type": "select",
+          "id": "content_type",
+          "label": "Content Type",
+          "options": [
+            {
+              "value": "description",
+              "label": "Product Description"
+            },
+            {
+              "value": "metafield",
+              "label": "Metafield"
+            },
+            {
+              "value": "custom",
+              "label": "Custom Content"
+            }
+          ],
+          "default": "custom"
+        },
+        {
+          "type": "text",
+          "id": "metafield_namespace",
+          "label": "Metafield Namespace",
+          "info": "Required if Content Type is Metafield"
+        },
+        {
+          "type": "text",
+          "id": "metafield_key",
+          "label": "Metafield Key",
+          "info": "Required if Content Type is Metafield"
+        },
+        {
+          "type": "richtext",
+          "id": "custom_content",
+          "label": "Custom Content",
+          "info": "Required if Content Type is Custom Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Tabs",
+      "blocks": [
+        {
+          "type": "tab"
+        },
+        {
+          "type": "tab"
+        },
+        {
+          "type": "tab"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,203 @@
+{%- liquid
+  # 1. Get upsell variant from product metafield
+  assign upsell_variant = product.metafields.custom.upsell_product_variant.value
+  
+  # 2. Initialize variables
+  assign also_product = nil
+  assign bg_color = product.metafields.custom.upsell_block_bg.value | default: '#111111'
+  
+# 3. Get product from upsell variant metafield or block fallback
+  if upsell_variant
+    assign also_product = upsell_variant.product
+    assign display_title = block.settings.title | default: also_product.title
+    
+   
+ 
+  endif
+-%}
+
+<!-- DEBUG OUTPUT -->
+<div style="display:none;">
+  Upsell Variant: {{ upsell_variant | json }} |
+  Product: {{ also_product.title | default: 'NOT FOUND' }} |
+  Variant: {{ upsell_variant.title | default: 'DEFAULT' }} |
+  BG Color: {{ bg_color }}
+</div>
+
+{% if also_product %}
+  <a href="{{ also_product.url }}" class="product-also-see-link" style="display: block; text-decoration: none;">
+<div class="product-also-see-container">
+  <div class="product-also-see-item" style="background-color: {{ bg_color }} !important;">
+    {% if block.settings.custom_image != blank %}
+      <img src="{{ block.settings.custom_image | img_url: '300x' }}" alt="{{ also_product.title }}" class="also-see-image">
+    {% else %}
+      <img src="{{ also_product.featured_image | img_url: '300x' }}" alt="{{ also_product.title }}" class="also-see-image">
+    {% endif %}
+    
+    <div class="also-see-content">
+        <h4 class="also-see-title">{{ display_title }}</h4>
+        
+    
+      
+      <div class="also-see-price">
+        {% if upsell_variant and upsell_variant.compare_at_price > upsell_variant.price %}
+          <span class="compare-price">{{ upsell_variant.compare_at_price | money }}</span>
+          <span class="price">{{ upsell_variant.price | money }}</span>
+        {% elsif also_product.compare_at_price > also_product.price %}
+          <span class="compare-price">{{ also_product.compare_at_price | money }}</span>
+          <span class="price">{{ also_product.price | money }}</span>
+        {% else %}
+          <span class="price">{{ also_product.price | money }}</span>
+        {% endif %}
+      </div>
+    </div>
+    
+    <button class="also-see-add-btn" 
+            data-variant-id="{% if upsell_variant %}{{ upsell_variant.id }}{% else %}{{ also_product.selected_or_first_available_variant.id }}{% endif %}">
+      {{ block.settings.button_text | default: '+ ADD' }}
+    </button>
+  </div>
+</div>
+  </a>
+{% endif %}
+
+<style>
+  .product-also-see-container {
+        margin: 30px 0;
+    
+  }
+
+  .product-also-see-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding:16px;
+    position: relative;
+    border-radius: 8px;
+   
+   
+  }
+
+  .also-see-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .also-see-content {
+    flex: 1;
+    width: calc(100% - 80px);
+        padding: 0px 80px 0px 8px !important;
+  }
+
+  .also-see-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 5px 0;
+    color: #000;
+  }
+
+  .also-see-description {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    margin: 0 0 5px 0;
+    color: #666;
+  }
+
+  .also-see-price {
+    margin: 10px 0;
+  }
+
+  .compare-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+    font-size: .9rem !important;
+  }
+
+  .price {
+    
+    color: #000;
+    font-size: .9rem !important;
+  }
+
+  .also-see-add-btn {
+    background: #fff;
+    border: 2px solid #3772F6 !important;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: absolute;
+    right: 16px;
+    top:16px;
+    padding: 6px 9px;
+    min-height:0;
+    color: #3772F6;
+    font-weight: 700;
+    box-shadow: (0px 2.2716px 2.2716px rgba(0, 0, 0, 0.08));
+  }
+
+  .also-see-add-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    
+    
+    .also-see-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.also-see-add-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      const variantId = this.getAttribute('data-variant-id');
+      
+      // Add loading state
+      this.textContent = 'Adding...';
+      
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          items: [{
+            id: variantId,
+            quantity: 1
+          }]
+        })
+      })
+      .then(response => response.json())
+      .then(() => {
+        // Success - reset button and show message
+        this.textContent = '✓ Added';
+        setTimeout(() => {
+          this.textContent = this.dataset.originalText || '{{ block.settings.button_text | default: "+ ADD" }}';
+        }, 2000);
+        
+        // Update cart count if your theme has this function
+        if (typeof theme !== 'undefined' && theme.cartUpdate) {
+          theme.cartUpdate();
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        this.textContent = 'Error';
+        setTimeout(() => {
+          this.textContent = this.dataset.originalText || '{{ block.settings.button_text | default: "+ ADD" }}';
+        }, 2000);
+      });
+    });
+  });
+});
+</script>
