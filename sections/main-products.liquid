@@ -193,81 +193,73 @@ span.product_review_content {
 {% render 'dk-pdp-priceUnderTitle' %} 
 {%- endcomment -%}
 
-<!-- <script>
-  // Function to initialize the variant selection logic
-function initVariantSelection(sectionId) {
-    var sectionElement = document.getElementById(sectionId); // Get the section by its ID
-    var swatches = sectionElement.querySelectorAll('.swatch_pr_item'); // Query swatches within the section
-    var variantInfo = sectionElement.querySelector('#variant-info');
+<script>
+  // Initialize variant swatch logic for a given section-id
+  function initVariantSelection(sectionId) {
+    var sectionSelector = '[data-section-id="' + sectionId + '"]';
+    var sectionElement = document.querySelector(sectionSelector);
+    if (!sectionElement) return;
 
-    // Listen for click event on each swatch
+    var swatches = sectionElement.querySelectorAll('.swatch_pr_item');
     swatches.forEach(function(swatch) {
-        swatch.addEventListener('click', function() {
-            var clickedValue = this.dataset.value;
-            var optionIndex = this.closest('.swatches-select').dataset.id;
-
-            // Update the current selected swatch and look for the new variant
-            updateSelectedSwatch(this, optionIndex, sectionElement);
-            updateVariantInfo(sectionElement);
-        });
+      swatch.addEventListener('click', function() {
+        var optionIndex = this.closest('.swatches-select').dataset.id;
+        updateSelectedSwatch(optionIndex, sectionElement, this);
+        updateVariantInfo(sectionElement);
+      });
     });
 
-    // Update the selected swatch visually and store the value in a dataset
-    function updateSelectedSwatch(swatch, optionIndex, sectionElement) {
-        // Remove the 'is-selected-nt' class from all swatches of the same option group
-        var swatchesInGroup = sectionElement.querySelectorAll('.nt_select' + optionIndex + ' .swatch_pr_item');
-        swatchesInGroup.forEach(function(sw) {
-            sw.classList.remove('is-selected-nt');
-        });
-
-        // Add 'is-selected-nt' class to the clicked swatch
-        swatch.classList.add('is-selected-nt');
+    function updateSelectedSwatch(optionIndex, sectionElement, swatch) {
+      // Deselect all in this group
+      var groupSelector = 
+        '.swatches-select[data-id="' + optionIndex + '"] .swatch_pr_item';
+      sectionElement.querySelectorAll(groupSelector).forEach(function(s) {
+        s.classList.remove('is-selected-nt');
+      });
+      // Select clicked
+      swatch.classList.add('is-selected-nt');
     }
 
-    // Update the variant information displayed in the div
     function updateVariantInfo(sectionElement) {
-        var product = {{ product | json }};
-        var selectedOptions = [];
+      var product = {{ product | json }};
+      var selectedOptions = product.options_with_values.map(function(_, idx) {
+        var sel = sectionElement.querySelector(
+          '.swatches-select[data-id="' + idx + '"] .is-selected-nt'
+        );
+        return sel ? sel.dataset.value : null;
+      });
 
-        // Get the currently selected swatches for each option
-        product.options_with_values.forEach(function(option, index) {
-            var selectedSwatch = sectionElement.querySelector('.nt_select' + index + ' .is-selected-nt');
-            selectedOptions[index] = selectedSwatch ? selectedSwatch.dataset.value : null;
-        });
+      var newVariant = product.variants.find(function(v) {
+        return v.option1 === selectedOptions[0]
+          && (product.options_with_values.length < 2 || v.option2 === selectedOptions[1])
+          && (product.options_with_values.length < 3 || v.option3 === selectedOptions[2]);
+      });
 
-        // Find the corresponding variant
-        var newVariant = product.variants.find(function(variant) {
-            return variant.option1 == selectedOptions[0] &&
-                   (product.options_with_values.length < 2 || variant.option2 == selectedOptions[1]) &&
-                   (product.options_with_values.length < 3 || variant.option3 == selectedOptions[2]);
-        });
-
-        // If a variant is found, update the displayed info
-        if (newVariant) {
-            sectionElement.querySelector('#variant-title').textContent = newVariant.title;
-            sectionElement.querySelector('#variant-price').textContent = Shopify.formatMoney(newVariant.price);
-        }
+      if (newVariant) {
+        var titleEl = sectionElement.querySelector('#variant-title');
+        var priceEl = sectionElement.querySelector('#variant-price');
+        if (titleEl) titleEl.textContent = newVariant.title;
+        if (priceEl) priceEl.textContent = Shopify.formatMoney(newVariant.price);
+      }
     }
-}
+  }
 
-// Shopify dynamically loads sections, so we use a listener for section rendering
-document.addEventListener('shopify:section:load', function(event) {
-    var sectionId = event.detail.sectionId;
-    initVariantSelection(sectionId); // Initialize variant selection on section load
-});
-
-// Also initialize on page load for static content
-document.addEventListener('DOMContentLoaded', function() {
-    var sectionElements = document.querySelectorAll('[data-section-id]');
-    sectionElements.forEach(function(sectionElement) {
-        initVariantSelection(sectionElement.id);
+  // On initial page load
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[data-section-id]').forEach(function(el) {
+      initVariantSelection(el.getAttribute('data-section-id'));
     });
-});
+  });
 
-</script> -->
+  // For Shopify's dynamic section rendering
+  document.addEventListener('shopify:section:load', function(event) {
+    initVariantSelection(event.detail.sectionId);
+  });
+</script>
+
   
    
-<!-- <style>
+<style>
   .main-price-variant{
     display: flex;
     justify-content: space-between;
@@ -297,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
   display: block;
 }
 }
-</style> -->
+</style>
  </div>      
          {%- unless no_sidebar %}<div class="col-lg-{{class_sidebar}} col-12 sidebar sidebar_pr lazyloadt4s lazypreloadt4s" data-t4sid="pr-sidebar" data-set4url="/?section_id=pr-sidebar" data-rendert4s="{{product.url}}"><div class="nt_svg_loader dn"></div></div>{% endunless -%}
          <div class="col-md-{{class_main}} col-12 thumb_{{cl_tb}}">
