@@ -102,7 +102,6 @@
         },
         "tab_ByL6Tz": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "PRODUCT HIGHLIGHTS",
             "content": "{{ product.metafields.custom.product_highlights | metafield_tag }}",
@@ -111,7 +110,6 @@
         },
         "tab_NgfKdp": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "INSIDE THE BOX",
             "content": "{{ product.metafields.custom.inside_the_box | metafield_tag }}",
@@ -120,7 +118,6 @@
         },
         "tab_e9ijPf": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": " HOW TO USE",
             "content": "{{ product.metafields.custom.how_to_use | metafield_tag }}",
@@ -129,7 +126,6 @@
         },
         "tab_amXDkq": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": " HOW IT'S MADE",
             "content": "{{ product.metafields.custom.how_it_s_made | metafield_tag }}",
@@ -138,7 +134,6 @@
         },
         "010c1c18-a800-4f11-977a-bf8f92c0a068": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": "SHIPPING INFORMATION",
             "content": "<p>{{ product.metafields.my_fields.shipping_information | metafield_tag }}</p>",
@@ -147,7 +142,6 @@
         },
         "tab_Cg8dQJ": {
           "type": "tab",
-          "disabled": true,
           "settings": {
             "title": " FREQUENTLY ASKED QUESTIONS",
             "content": "{{ product.metafields.custom.frequently_asked_questions_ | metafield_tag }}",
@@ -288,6 +282,7 @@
         "tab_7xqUeT",
         "tab_x98B7j"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "section_heading": "Product Information"
