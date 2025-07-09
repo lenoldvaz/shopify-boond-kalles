@@ -201,7 +201,7 @@ span.product_review_content {
     if (!sectionElement) return;
 
     var swatches = sectionElement.querySelectorAll('.swatch_pr_item');
-    console.log("swatch item", swatches)
+    
     swatches.forEach(function(swatch) {
       swatch.addEventListener('click', function() {
         var optionIndex = this.closest('.swatches-select').dataset.id;
