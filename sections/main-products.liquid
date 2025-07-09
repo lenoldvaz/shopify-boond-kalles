@@ -125,8 +125,99 @@
 
         <h1 class="product_title entry-title only-for-mobile" style="font-size: {{bk_stts.size}}px" {{ block.shopify_attributes }}>{{product.title}}</h1>
 
-        
- <div class="ctm-mob"> 
+        <!-- Swatch Groups -->
+        {% for option in product.options_with_values %}
+          <ul class="swatches-select" data-id="{{ forloop.index0 }}">
+            {% for value in option.values %}
+              <li class="swatch_pr_item{% if value == option.selected_value %} is-selected-nt{% endif %}" data-value="{{ value }}">{{ value }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+
+        <!-- Variant Title and Price Placeholders -->
+        <div class="main-price-variant">
+          <span id="variant-title">{{ product.selected_or_first_available_variant.title }}</span>
+          <span id="variant-price">{{ product.selected_or_first_available_variant.price | money }}</span>
+        </div>
+
+        <!-- Product Media Thumbnails with data-mdid -->
+        <div class="product-thumbnails">
+          {% for media in product.media %}
+            <div class="product-thumbnail" data-mdid="{{ media.id }}">
+              <img src="{{ media.preview_image | img_url: '100x' }}" alt="{{ media.alt }}">
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- Add-to-Cart Form with name="id" input -->
+        <form method="post" action="/cart/add" id="add-to-cart-form">
+          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          <button type="submit">Add to Cart</button>
+        </form>
+
+        <style>
+          .swatch_pr_item.is-selected-nt { outline: 2px solid #000; }
+        </style>
+
+        <script>
+          function initVariantSelection(sectionId) {
+            var sectionSelector = '[data-section-id="' + sectionId + '"]';
+            var sectionElement = document.querySelector(sectionSelector);
+            if (!sectionElement) return;
+
+            var swatches = sectionElement.querySelectorAll('.swatch_pr_item');
+            swatches.forEach(function(swatch) {
+              swatch.addEventListener('click', function() {
+                var optionIndex = this.closest('.swatches-select').dataset.id;
+                updateSelectedSwatch(optionIndex, sectionElement, this);
+                updateVariantInfo(sectionElement);
+              });
+            });
+
+            function updateSelectedSwatch(optionIndex, sectionElement, swatch) {
+              var groupSelector = '.swatches-select[data-id="' + optionIndex + '"] .swatch_pr_item';
+              sectionElement.querySelectorAll(groupSelector).forEach(function(s) {
+                s.classList.remove('is-selected-nt');
+              });
+              swatch.classList.add('is-selected-nt');
+            }
+
+            function updateVariantInfo(sectionElement) {
+              var product = {{ product | json }};
+              var selectedOptions = product.options_with_values.map(function(_, idx) {
+                var sel = sectionElement.querySelector('.swatches-select[data-id="' + idx + '"] .is-selected-nt');
+                return sel ? sel.dataset.value : null;
+              });
+              var newVariant = product.variants.find(function(v) {
+                return v.option1 === selectedOptions[0]
+                  && (product.options_with_values.length < 2 || v.option2 === selectedOptions[1])
+                  && (product.options_with_values.length < 3 || v.option3 === selectedOptions[2]);
+              });
+              if (newVariant) {
+                var titleEl = sectionElement.querySelector('#variant-title');
+                var priceEl = sectionElement.querySelector('#variant-price');
+                var idInput = sectionElement.querySelector('input[name="id"]');
+                if (titleEl) titleEl.textContent = newVariant.title;
+                if (priceEl) priceEl.textContent = Shopify.formatMoney(newVariant.price);
+                if (idInput) idInput.value = newVariant.id;
+                // Optionally update main image if needed
+                var thumb = sectionElement.querySelector('.product-thumbnail[data-mdid="' + newVariant.featured_media.id + '"] img');
+                var mainImg = sectionElement.querySelector('.product-images img');
+                if (thumb && mainImg) mainImg.src = thumb.src;
+              }
+            }
+          }
+          document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('[data-section-id]').forEach(function(el) {
+              initVariantSelection(el.getAttribute('data-section-id'));
+            });
+          });
+          document.addEventListener('shopify:section:load', function(event) {
+            initVariantSelection(event.detail.sectionId);
+          });
+        </script>
+
+        <div class="ctm-mob"> 
             <!-- Start of Judge.me code --> 
   <div class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}'> 
     {{ product.metafields.judgeme.badge }} 
@@ -192,70 +283,6 @@ span.product_review_content {
 {%- comment -%}
 {% render 'dk-pdp-priceUnderTitle' %} 
 {%- endcomment -%}
-
-<script>
-  // Initialize variant swatch logic for a given section-id
-  function initVariantSelection(sectionId) {
-    var sectionSelector = '[data-section-id="' + sectionId + '"]';
-    var sectionElement = document.querySelector(sectionSelector);
-    if (!sectionElement) return;
-
-    var swatches = sectionElement.querySelectorAll('.swatch_pr_item');
-    swatches.forEach(function(swatch) {
-      swatch.addEventListener('click', function() {
-        var optionIndex = this.closest('.swatches-select').dataset.id;
-        updateSelectedSwatch(optionIndex, sectionElement, this);
-        updateVariantInfo(sectionElement);
-      });
-    });
-
-    function updateSelectedSwatch(optionIndex, sectionElement, swatch) {
-      // Deselect all in this group
-      var groupSelector = 
-        '.swatches-select[data-id="' + optionIndex + '"] .swatch_pr_item';
-      sectionElement.querySelectorAll(groupSelector).forEach(function(s) {
-        s.classList.remove('is-selected-nt');
-      });
-      // Select clicked
-      swatch.classList.add('is-selected-nt');
-    }
-
-    function updateVariantInfo(sectionElement) {
-      var product = {{ product | json }};
-      var selectedOptions = product.options_with_values.map(function(_, idx) {
-        var sel = sectionElement.querySelector(
-          '.swatches-select[data-id="' + idx + '"] .is-selected-nt'
-        );
-        return sel ? sel.dataset.value : null;
-      });
-
-      var newVariant = product.variants.find(function(v) {
-        return v.option1 === selectedOptions[0]
-          && (product.options_with_values.length < 2 || v.option2 === selectedOptions[1])
-          && (product.options_with_values.length < 3 || v.option3 === selectedOptions[2]);
-      });
-
-      if (newVariant) {
-        var titleEl = sectionElement.querySelector('#variant-title');
-        var priceEl = sectionElement.querySelector('#variant-price');
-        if (titleEl) titleEl.textContent = newVariant.title;
-        if (priceEl) priceEl.textContent = Shopify.formatMoney(newVariant.price);
-      }
-    }
-  }
-
-  // On initial page load
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('[data-section-id]').forEach(function(el) {
-      initVariantSelection(el.getAttribute('data-section-id'));
-    });
-  });
-
-  // For Shopify's dynamic section rendering
-  document.addEventListener('shopify:section:load', function(event) {
-    initVariantSelection(event.detail.sectionId);
-  });
-</script>
 
   
    
