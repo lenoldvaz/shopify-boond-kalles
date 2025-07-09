@@ -243,6 +243,16 @@
             "custom_content": ""
           }
         },
+        "tab_8kt6YD": {
+          "type": "tab",
+          "settings": {
+            "tab_heading": "How to use",
+            "content_type": "custom",
+            "metafield_namespace": "",
+            "metafield_key": "",
+            "custom_content": "{{ product.metafields.custom.how_to_use | metafield_tag }}"
+          }
+        },
         "tab_VerTr9": {
           "type": "tab",
           "settings": {
@@ -276,6 +286,7 @@
       },
       "block_order": [
         "tab_eNPYwy",
+        "tab_8kt6YD",
         "tab_VerTr9",
         "tab_7xqUeT",
         "tab_x98B7j"
