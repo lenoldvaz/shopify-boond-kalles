@@ -192,7 +192,7 @@
       "settings": {
         "IpFinder_api_key": "2drrfwafetmhb4tb",
         "pr_layout": "default",
-        "design_products": "4",
+        "design_products": "7",
         "size_img_pr": "2",
         "nav_img_pr": "medium",
         "use_sticky_des": false,
@@ -314,6 +314,36 @@
         "pd_mb": ""
       }
     },
+    "dk_img_text2_col_KLhPcK": {
+      "type": "dk-imgText2Col",
+      "blocks": {
+        "content_LNRCAc": {
+          "type": "content",
+          "settings": {
+            "small_heading": "All Natural Fragrances",
+            "heading": "Discover the Benefits of Our Fragrances",
+            "content": ""
+          }
+        },
+        "image_RxkRNH": {
+          "type": "image",
+          "settings": {
+            "image_source": "upload",
+            "image": "shopify://shop_images/Frame_264_66eeffa1-b34c-46bf-ab42-be9eccaadc80.png",
+            "metafield_namespace": "",
+            "metafield_key": ""
+          }
+        }
+      },
+      "block_order": [
+        "content_LNRCAc",
+        "image_RxkRNH"
+      ],
+      "settings": {
+        "image_position": "left",
+        "background_color": "#ffffff"
+      }
+    },
     "dk_img_text2_col_8UAd7b": {
       "type": "dk-imgText2Col",
       "blocks": {
@@ -343,37 +373,6 @@
       "settings": {
         "image_position": "right",
         "background_color": "#fefbff"
-      }
-    },
-    "dk_img_text2_col_KLhPcK": {
-      "type": "dk-imgText2Col",
-      "blocks": {
-        "content_LNRCAc": {
-          "type": "content",
-          "settings": {
-            "small_heading": "All Natural Fragrances",
-            "heading": "Discover the Benefits of Our Fragrances",
-            "content": "<p>{{ product.metafields.custom.ideal_for | metafield_tag }}</p>"
-          }
-        },
-        "image_RxkRNH": {
-          "type": "image",
-          "settings": {
-            "image_source": "upload",
-            "image": "shopify://shop_images/Frame_264.png",
-            "metafield_namespace": "",
-            "metafield_key": ""
-          }
-        }
-      },
-      "block_order": [
-        "content_LNRCAc",
-        "image_RxkRNH"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_position": "left",
-        "background_color": "#ffffff"
       }
     },
     "product-description": {
@@ -613,8 +612,8 @@
     "dk_custom_tabs_hJyqkM",
     "custom_liquid_463mbe",
     "custom_liquid_gTPWg7",
-    "dk_img_text2_col_8UAd7b",
     "dk_img_text2_col_KLhPcK",
+    "dk_img_text2_col_8UAd7b",
     "product-description",
     "image_text_BwfLqM",
     "image_text_zihpwP",
