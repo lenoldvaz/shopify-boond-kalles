@@ -193,7 +193,7 @@ span.product_review_content {
 {% render 'dk-pdp-priceUnderTitle' %} 
 {%- endcomment -%}
 
-<!-- <script>
+<script>
   // Initialize variant swatch logic for a given section-id
   function initVariantSelection(sectionId) {
     var sectionSelector = '[data-section-id="' + sectionId + '"]';
@@ -255,54 +255,10 @@ span.product_review_content {
   document.addEventListener('shopify:section:load', function(event) {
     initVariantSelection(event.detail.sectionId);
   });
-</script> -->
+</script>
 
 
-   <script>
-
-
-     function updateVariantInfo(section) {
-  var product = {{ product | json }};
-  // 1) Build selectedOptions array
-  var selectedOptions = product.options_with_values.map(function(_, i) {
-    var el = section.querySelector(
-      '.swatches-select[data-id="' + i + '"] .is-selected-nt'
-    );
-    return el ? el.dataset.value : null;
-  });
-  console.log('🔥 selectedOptions:', selectedOptions);
-
-  // 2) Dump all variants & their options
-  console.table(product.variants.map(v => ({
-    id: v.id,
-    opt1: v.option1,
-    opt2: v.option2 || '',
-    opt3: v.option3 || ''
-  })));
-
-  // 3) Attempt to find the variant
-  var newVariant = product.variants.find(function(v) {
-    var match =
-      v.option1 === selectedOptions[0] &&
-      (product.options_with_values.length < 2 || v.option2 === selectedOptions[1]) &&
-      (product.options_with_values.length < 3 || v.option3 === selectedOptions[2]);
-    if (!match) {
-      console.warn(
-        `-- no match for variant ${v.id}:`,
-        [v.option1, v.option2, v.option3],
-        'vs',
-        selectedOptions
-      );
-    }
-    return match;
-  });
-
-  console.log('🎯 newVariant:', newVariant);
-  if (!newVariant) return;
-  // … rest of your update logic …
-}
-
-   </script>
+  
 
   
    
