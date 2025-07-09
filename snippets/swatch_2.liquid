@@ -51,7 +51,7 @@
 				<ul class="swatches-select swatch__list_pr" data-id="{{ option_index }}" data-size="{{size}}">
 			   	   {%- for value in option.values -%}
 			   	      {%- assign vh = value | handle -%}{%- assign sclass = '' -%}{%- if selected_value == value -%}{%- assign sclass = bclass -%}{%- endif -%}
-			   		   <li data-swatch-itemt4 data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="ttip_nt tooltip_top{%- if forloop.first == true -%}_right{%- endif %} nt-swatch swatch_pr_item bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="tt_txt">{{ value }}</span><span class="swatch__value_pr pr bg_color_{{ vh }} lazyloadt4s"></span></li>
+			   		   <li data-swatch-itemt4 data-index="{{ forloop.index0 }}" data-value='{{ value }}' class="ttip_nt tooltip_top{%- if forloop.first == true -%}_right{%- endif %} nt-swatch swatch_pr_item bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="tt_txt">{{ value }}</span><span class="swatch__value_pr pr bg_color_{{ vh }} lazyloadt4s"></span></li>
 			   	   {%- endfor -%}
 				</ul>
 			</div>
@@ -62,7 +62,7 @@
 				<ul class="swatches-select swatch__list_pr" data-id="{{ option_index }}" data-size="{{size}}">
 		   	   {%- for value in option.values -%}
 		   	      {%- assign vh = value | handle -%}{%- assign sclass = '' -%}{%- if selected_value == value -%}{%- assign sclass = bclass -%}{%- endif -%}
-		   		   <li data-swatch-itemt4 data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="nt-swatch swatch_pr_item pr bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="swatch__value_pr">{{ value }}</span></li>
+		   		   <li data-swatch-itemt4 data-index="{{ forloop.index0 }}" data-value='{{ value }}' class="nt-swatch swatch_pr_item pr bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="swatch__value_pr">{{ value }}</span></li>
 		   	   {%- endfor -%}
 				</ul>
 			</div>
