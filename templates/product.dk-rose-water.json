@@ -196,7 +196,8 @@
         ".jdgm-preview-badge {display: block; margin-left: 0px; margin-bottom: 16px;}",
         ".flickityt4s-prev-next-button {opacity: 1 !important;}",
         ".ctm-product .ctm-mob {display: none !important;}",
-        "@media (max-width: 768px) {.ctm-product .ctm-mob {display: block !important; }}"
+        ".sp-single-4 .sp-pr-gallery + .product-thumbnails,.thumb_bottom .product-thumbnails {  display: flex !important;  flex-direction: row !important;  justify-content: center;  margin-top: 12px;}",
+        "@media (max-width: 768px) {.ctm-product .ctm-mob {display: block !important; },.sp-single-4 .sp-pr-gallery + .product-thumbnails, .thumb_bottom .product-thumbnails {flex-direction: row !important; width: 100%; overflow-x: auto;}}"
       ],
       "settings": {
         "IpFinder_api_key": "2drrfwafetmhb4tb",
