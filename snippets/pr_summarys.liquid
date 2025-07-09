@@ -693,20 +693,66 @@ End automatically added Judge.me widget{% endcomment %}
    {%- when 'selluxe_icons_with_text' %}
 
       <div class="sales-points">
-        {% for block in section.blocks %}
-          {% if block.type == 'sales_point' %}
-            <div class="selluxe-points">
-              {% if block.settings.icon.preview_image != blank %}
-                <img class="selluxe-icon-image" src="{{ block.settings.icon | img_url: '32x32' }}">
-              {% else %}
-                {{ block.settings.svg }}
-              {% endif %}
-              <div class="selluxe-point-text" style="color: {{ block.settings.text_color }};">
-                {{ block.settings.text }}
-              </div>
-            </div>
+        {% if block.settings.bullet_text_1 != empty %}
+        <div class="selluxe-points">
+          {% if block.settings.bullet_icon_1.preview_image != blank %}
+          <img class="selluxe-icon-image" src="{% if block.settings.bullet_icon_1.preview_image != null %}{{ block.settings.bullet_icon_1 | img_url }}  16w,32w{% else %} https://cdn-icons-png.flaticon.com/128/2769/2769339.png {% endif %}">
+          {% else %}
+          {{ block.settings.bullet_svg_1 }}
           {% endif %}
-        {% endfor %}
+          <div style="color:{{ block.settings.bullet_text_color_1 }}" class="selluxe-text-container">
+            {{ product.metafields.custom.product_bullets | metafield_tag }}
+          </div>
+        </div>
+        {% endif %}
+        {% if block.settings.bullet_text_2 != empty %}
+        <div class="selluxe-points">
+          {% if block.settings.bullet_icon_2.preview_image != blank %}
+          <img class="selluxe-icon-image" src="{% if block.settings.bullet_icon_2.preview_image != null %}{{ block.settings.bullet_icon_2 | img_url }}{% else %} https://cdn-icons-png.flaticon.com/128/2279/2279674.png {% endif %}">
+          {% else %}
+          {{ block.settings.bullet_svg_2 }}
+          {% endif %}
+          <div style="color:{{ block.settings.bullet_text_color_2 }}" class="selluxe-text-container">
+            {{ product.metafields.custom.product_bullets_2 | metafield_tag }}
+          </div>
+        </div>
+        {% endif %}
+        {% if block.settings.bullet_text_3 != empty %}
+        <div class="selluxe-points">
+          {% if block.settings.bullet_icon_3.preview_image != blank %}
+          <img class="selluxe-icon-image" src="{% if block.settings.bullet_icon_3.preview_image != null %}{{ block.settings.bullet_icon_3 | img_url }}{% else %} https://cdn-icons-png.flaticon.com/128/1332/1332646.png {% endif %}">
+          {% else %}
+          {{ block.settings.bullet_svg_3 }}
+          {% endif %}
+          <div style="color:{{ block.settings.bullet_text_color_3 }}" class="selluxe-text-container">
+            {{ product.metafields.custom.product_bullets_3 | metafield_tag }}
+          </div>
+        </div>
+        {% endif %}
+        {% if block.settings.bullet_text_4 != empty %}
+        <div class="selluxe-points">
+          {% if block.settings.bullet_icon_4.preview_image != blank %}
+          <img class="selluxe-icon-image" src="{% if block.settings.bullet_icon_4.preview_image != null %}{{ block.settings.bullet_icon_4 | img_url }}{% else %} https://cdn-icons-png.flaticon.com/128/1332/1332646.png {% endif %}">
+          {% else %}
+          {{ block.settings.bullet_svg_4 }}
+          {% endif %}
+          <div style="color:{{ block.settings.bullet_text_color_4 }}" class="selluxe-text-container">
+            {{ product.metafields.custom.product_bullet_4 | metafield_tag }}
+          </div>
+        </div>
+        {% endif %}
+        {% if block.settings.bullet_text_5 != empty %}
+        <div class="selluxe-points">
+          {% if block.settings.bullet_icon_5.preview_image != blank %}
+          <img class="selluxe-icon-image" src="{% if block.settings.bullet_icon_5.preview_image != null %}{{ block.settings.bullet_icon_5 | img_url }}{% else %} https://cdn-icons-png.flaticon.com/128/1332/1332646.png {% endif %}">
+          {% else %}
+          {{ block.settings.bullet_svg_5 }}
+          {% endif %}
+          <div style="color:{{ block.settings.bullet_text_color_5 }}" class="selluxe-text-container">
+            {{ product.metafields.custom.product_bullets_5 | metafield_tag }}
+          </div>
+        </div>
+        {% endif %}
       </div>
       
       {%- when 'store_avai' %}{% if no_sold_out == false %}{% continue %}{% endif -%}
