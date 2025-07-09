@@ -1123,18 +1123,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gift wrap container
     var giftWrapContainer = document.querySelector('[data-opname="gift-wrap-rs-30-additional"]');
-    console.log("Gift wrap container found:", giftWrapContainer);
+   // console.log("Gift wrap container found:", giftWrapContainer);
 
     if (giftWrapContainer) {
       var giftWrapOptions = giftWrapContainer.querySelectorAll('.nt-swatch');
-      console.log("Gift wrap options found:", giftWrapOptions.length);
+      //console.log("Gift wrap options found:", giftWrapOptions.length);
 
       // Gift message element
       var giftMessageElement = document.querySelector('[data-element-id="text-1"]');
-      console.log("Gift message element found:", giftMessageElement);
+    //  console.log("Gift message element found:", giftMessageElement);
 
       if (giftMessageElement) {
-        console.log("All required elements found!");
+       // console.log("All required elements found!");
 
         function updateGiftMessageVisibility() {
           var giftMessageContainer = giftMessageElement.closest('.gpo-element');
