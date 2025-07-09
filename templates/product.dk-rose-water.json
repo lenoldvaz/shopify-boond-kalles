@@ -21,6 +21,7 @@
         },
         "judge_me_reviews_preview_badge_eybVeB": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {}
         },
         "custom_liquid_UnDBxa": {
@@ -146,6 +147,20 @@
             "content": "{{ product.metafields.custom.frequently_asked_questions_ | metafield_tag }}",
             "page": ""
           }
+        },
+        "e11e4aa9-71a8-4b16-9c75-6718a18c2334": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n .sales-points  svg.icon rect{\n  stroke: #000;\n}\n      .sales-point {\n        display: flex;\n        flex-direction: row;\n        margin-top: 20px;\n        background: #fefbff;\n        padding: 15px 3px;\n    justify-content: center;\n    }\n.sales-points svg.icon{\n     color: #fff !important;\n      width: 17px !important;\n    margin-right: 13px;\n    margin-left: 5px;\n}\n   .sales-points   svg.icon line{\n        fill: #fff;\n    stroke: #000;\n      }\n    .selluxe-points {\n        display:flex;\n        align-items:center;\n        margin-bottom:10px;\n    }\n\n.selluxe-points .selluxe-text-containers {\nwidth: 100%;\n    align-items: center;\n    font-size: 11px;\n    font-weight: 700;\n    line-height: 11px;\n}\n\n    .selluxe-points .selluxe-icon-image {\n        width: {{ block.settings.icon_size }}px !important;\n        margin-right: 12px;\n          margin-left: 5px;\n    }\n\n    </style>\n\n      <div class=\"sales-point\">\n        <div class=\"selluxe-points\">\n          <img class=\"selluxe-icon-image\" src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/svgviewer-png-output_3_png.png?v=1726864674\">\n          <div style=\"color:{{ block.settings.bullet_text_color_1 }}; font-weight:700;\" class=\"selluxe-text-containers\">\n            Free 2-Day Shipping\n          </div>\n        </div>\n   <div class=\"selluxe-points\">   \n          <img class=\"selluxe-icon-image\" src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/svgviewer-png-output_4_png.png?v=1726864673\">\n          <div style=\"color:{{ block.settings.bullet_text_color_2 }};\" class=\"selluxe-text-containers\">\n            Locally Sourced\n          </div>\n        </div>\n<div class=\"selluxe-points\">\n          <img class=\"selluxe-icon-image\" src=\"https://cdn.shopify.com/s/files/1/0637/4765/3864/files/svgviewer-png-output_5_png.png?v=1726864674\">\n          <div style=\"color:{{ block.settings.bullet_text_color_3 }};\" class=\"selluxe-text-containers\">\n            Secure Checkout\n          </div>\n        </div>\n      </div>"
+          }
+        },
+        "custom_liquid_iK8Mww": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<hr style=\"margin: 20px 0 25px;\">\n\n<div class=\"ctm-rich\">\n<div class=\"ctm-sub\">All Natural Fragrance</div>\n<div class=\"ctm-title\">Discover the Benefits of Our Fragrances</div>\n<div class=\"ctm-text\">{{ product.metafields.custom.matti_text }}</div>\n<img class=\"ctm-dis-img\" src=\"{{ product.metafields.custom.discover_image }}\">    \n\n<a type=\"submit\" class=\"single_add_to_cart_button button truncate js_frm_cart- w__100 mt__20 order-4\" style=\"display: inline-block; background: #000000 !important; border-radius:8px !important; text-align: center; justify-content: center; min-height: 50px; border-color: black !important; margin-top:10px; display: block;\" href=\"\"><span style=\"text-align: center; justify-content: center; border-radius:8px; margin-top: 7px !important; display: flex;\" class=\"txt_add\">Add to cart</span></a>\n\n\n\n\n             \n</div>\n\n<style>\n.ctm-sub{\nfont-family: Poppins;\nfont-size: 11px;\nfont-weight: 400;\nline-height: 16.5px;\nletter-spacing: -0.33000001311302185px;\ntext-align: center;\ncolor: #B20000;\n}\n.ctm-title{\nfont-family: Poppins;\nfont-size: 24px;\nfont-weight: 600;\nline-height: 30px;\ntext-align: center;\nmargin-top: 10px;\nmargin-bottom: 10px;\n}\n.ctm-text{\nfont-family: Poppins;\nfont-size: 12px;\nfont-weight: 400;\nline-height: 18px;\nletter-spacing: -0.36000001430511475px;\ntext-align: center;\nmargin-top: 10px;\nmargin-bottom: 10px;\n}\n@media(min-width:769px){\n.ctm-dis-img{\nwidth: 50%;\nmargin-left: 25%;\n}\n}\n@media(max-width:768px){\n.ctm-dis-img{\nwidth: 100%;\nmargin-left: 0%;\n}\n}\n</style>"
+          }
         }
       },
       "block_order": [
@@ -162,7 +177,9 @@
         "tab_e9ijPf",
         "tab_amXDkq",
         "010c1c18-a800-4f11-977a-bf8f92c0a068",
-        "tab_Cg8dQJ"
+        "tab_Cg8dQJ",
+        "e11e4aa9-71a8-4b16-9c75-6718a18c2334",
+        "custom_liquid_iK8Mww"
       ],
       "custom_css": [
         ".col-md-6.col-12.product-infors.pr_sticky_su {padding-left: 0px; padding-right: 0px;}",
@@ -286,6 +303,7 @@
     },
     "custom_liquid_gTPWg7": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<hr style=\"margin: 20px 0 25px;\">\n\n<div class=\"ctm-rich\">\n<div class=\"ctm-sub\">All Natural Fragrance</div>\n<div class=\"ctm-title\">Discover the Benefits of Our Fragrances</div>\n<div class=\"ctm-text\">{{ product.metafields.custom.matti_text }}</div> \n<img class=\"ctm-dis-img\" src=\"{{ product.metafields.custom.discover_image }}\">    \n\n             \n</div>\n\n<style>\n.ctm-sub{\nfont-family: Poppins;\nfont-size: 11px;\nfont-weight: 400;\nline-height: 16.5px;\nletter-spacing: -0.33000001311302185px;\ntext-align: center;\ncolor: #B20000;\n}\n.ctm-title{\nfont-family: Poppins;\nfont-size: 24px;\nfont-weight: 600;\nline-height: 30px;\ntext-align: center;\nmargin-top: 10px;\nmargin-bottom: 10px;\n}\n.ctm-text{\nfont-family: Poppins;\nfont-size: 12px;\nfont-weight: 400;\nline-height: 18px;\nletter-spacing: -0.36000001430511475px;\ntext-align: center;\nmargin-top: 10px;\nmargin-bottom: 10px;\n}\n@media(min-width:769px){\n.ctm-dis-img{\nwidth: 50%;\nmargin-left: 25%;\n}\n}\n@media(max-width:768px){\n.ctm-dis-img{\nwidth: 100%;\nmargin-left: 0%;\n}\n}\n</style>",
         "layout": "nt_full",
@@ -352,6 +370,7 @@
         "content_LNRCAc",
         "image_RxkRNH"
       ],
+      "disabled": true,
       "settings": {
         "image_position": "left",
         "background_color": "#ffffff"
@@ -574,6 +593,18 @@
         "image_size": "nt_cover",
         "image_position": "8"
       }
+    },
+    "custom_liquid_WLeWpb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "layout": "nt_full",
+        "cl_bg": "#ffffff",
+        "mg": "50px,,20px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -588,6 +619,7 @@
     "image_text_BwfLqM",
     "image_text_zihpwP",
     "recently-viewed-products",
-    "product-recommendations"
+    "product-recommendations",
+    "custom_liquid_WLeWpb"
   ]
 }
