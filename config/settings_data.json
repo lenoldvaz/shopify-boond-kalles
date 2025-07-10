@@ -605,6 +605,7 @@
           },
           "link2_cPUgBc": {
             "type": "link2",
+            "disabled": true,
             "settings": {
               "col": "3",
               "menu": "rose-water"

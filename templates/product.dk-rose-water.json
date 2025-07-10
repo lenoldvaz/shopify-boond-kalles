@@ -110,6 +110,7 @@
         },
         "tab_NgfKdp": {
           "type": "tab",
+          "disabled": true,
           "settings": {
             "title": "INSIDE THE BOX",
             "content": "{{ product.metafields.custom.inside_the_box | metafield_tag }}",
