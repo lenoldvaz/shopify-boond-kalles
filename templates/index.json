@@ -881,134 +881,6 @@
         "pd_mb": ""
       }
     },
-    "165157499155473c76": {
-      "type": "featured_collection_owl",
-      "settings": {
-        "title": "Make it yours",
-        "sub_title": "",
-        "sub_font": "2",
-        "btn_title": "See all products",
-        "style_title": "title_2",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "collection": "fragrance",
-        "limit": 8,
-        "space": 30,
-        "use_pagination": "view-all",
-        "btn_rd": true,
-        "btn_icon": false,
-        "btn_style": "default",
-        "col_pr": "15",
-        "col_pr_tb": "4",
-        "col_pr_mb": "6",
-        "pr_des": "1 tc",
-        "show_vendor": false,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "dot": true,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "use_eq_height": true,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8",
-        "cp_code": false,
-        "layout": "wrap",
-        "cl_bg": "",
-        "mg": "75px,0px,75px,0px",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "1651836297f6fd5f44": {
-      "type": "custom_section",
-      "blocks": {
-        "b6affb0e-1213-40f9-94a1-71671e610ded": {
-          "type": "heading",
-          "settings": {
-            "title": "Reviving Indian Perfume Making",
-            "sub_title": "",
-            "sub_font": "2",
-            "style_title": "title_2",
-            "ic_tt": "gem",
-            "show_clpr": false
-          }
-        },
-        "165183629720d43bb1-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_20210524_143337_2_a9979c60-430d-477d-ba5c-dee726911a5d.jpg",
-            "wid": "",
-            "cl": "6",
-            "cl_tb": "6",
-            "cl_mb": "12"
-          }
-        },
-        "45450218-f3f2-4506-b086-6276158c1f78": {
-          "type": "html",
-          "settings": {
-            "html": "<div class=\"text-align-left mobile-padding-top-50\"> \n  \n-Witess the joy of artisans who put their heart and soul while handcrafting these fragrances\n<br><br>\n-We're helping them revive the lost art form of perfume making\n<br><br>\n-Be it making handmade paper for boxes or screen printing, our aim is to take them across the world\n</div>",
-            "cl": "6",
-            "cl_tb": "6",
-            "cl_mb": "12"
-          }
-        }
-      },
-      "block_order": [
-        "b6affb0e-1213-40f9-94a1-71671e610ded",
-        "165183629720d43bb1-1",
-        "45450218-f3f2-4506-b086-6276158c1f78"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "container",
-        "cl_bg": "#ffffff",
-        "mg": "75px,,75px,",
-        "pd": "0px,,0px,",
-        "mg_mb": "",
-        "pd_mb": "0px,,0px,"
-      }
-    },
-    "1653103537882d00cb": {
-      "type": "video-with-text",
-      "settings": {
-        "title": "Reviving Indian perfume making",
-        "sub_title": "",
-        "sub_font": "1",
-        "style_title": "title_2",
-        "html_text": "<div class=\"text-align-left mobile-padding-top-50\"> \n<ul style=\"margin-left: 20px;list-style-position: outside;\">\n<li>  \nEmploying 15+ local artisans to handcraft the fragrances and package them.</li>\n<br> <li> \nMade using traditional art forms like the Deg-Bhapka technique, handmade paper making and screen-printing.\n</li> <br> \n<li> Chemical and alcohol free fragrances made from pure, natural and locally sourced raw materials.</li> \n <br> \n<li>  Conferred with the Geographical Indicator (GI) Tag by the Government of India for authentic Kannauj Perfume.</li> \n<br> \n</ul>\n</div>",
-        "image": "shopify://shop_images/IMG_20210524_143337_2_92d8922e-3276-4467-ba17-cf24437899c4.jpg",
-        "source": "2",
-        "video_url": "",
-        "file_name": "https://cdn.shopify.com/videos/c/o/v/030bf4e4fe5940deabbf1199808ab85d.mp4",
-        "se_height": "cus_h",
-        "use_custom_h": "1",
-        "h_des": "400px",
-        "h_tb": "300px",
-        "h_mb": "250px",
-        "caption_w": "2",
-        "cap_v_pos": 50,
-        "cap_h_pos": 50,
-        "txt_align": "tc",
-        "use_shadow": false,
-        "cl_overlay": "#000000",
-        "cl_opacity": 0,
-        "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
     "1652094241063968b2": {
       "type": "brand_list",
       "blocks": {
@@ -1154,6 +1026,134 @@
         "cl_bg": "#ffffff",
         "mg": "75px,,75px,",
         "pd": "0px,0px,0px,0px",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "165157499155473c76": {
+      "type": "featured_collection_owl",
+      "settings": {
+        "title": "Our Favourites",
+        "sub_title": "",
+        "sub_font": "2",
+        "btn_title": "See all products",
+        "style_title": "title_2",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "collection": "fragrance",
+        "limit": 8,
+        "space": 30,
+        "use_pagination": "view-all",
+        "btn_rd": true,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "15",
+        "col_pr_tb": "4",
+        "col_pr_mb": "6",
+        "pr_des": "1 tc",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio_nt",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "75px,0px,75px,0px",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1651836297f6fd5f44": {
+      "type": "custom_section",
+      "blocks": {
+        "b6affb0e-1213-40f9-94a1-71671e610ded": {
+          "type": "heading",
+          "settings": {
+            "title": "Reviving Indian Perfume Making",
+            "sub_title": "",
+            "sub_font": "2",
+            "style_title": "title_2",
+            "ic_tt": "gem",
+            "show_clpr": false
+          }
+        },
+        "165183629720d43bb1-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_20210524_143337_2_a9979c60-430d-477d-ba5c-dee726911a5d.jpg",
+            "wid": "",
+            "cl": "6",
+            "cl_tb": "6",
+            "cl_mb": "12"
+          }
+        },
+        "45450218-f3f2-4506-b086-6276158c1f78": {
+          "type": "html",
+          "settings": {
+            "html": "<div class=\"text-align-left mobile-padding-top-50\"> \n  \n-Witess the joy of artisans who put their heart and soul while handcrafting these fragrances\n<br><br>\n-We're helping them revive the lost art form of perfume making\n<br><br>\n-Be it making handmade paper for boxes or screen printing, our aim is to take them across the world\n</div>",
+            "cl": "6",
+            "cl_tb": "6",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "b6affb0e-1213-40f9-94a1-71671e610ded",
+        "165183629720d43bb1-1",
+        "45450218-f3f2-4506-b086-6276158c1f78"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "container",
+        "cl_bg": "#ffffff",
+        "mg": "75px,,75px,",
+        "pd": "0px,,0px,",
+        "mg_mb": "",
+        "pd_mb": "0px,,0px,"
+      }
+    },
+    "1653103537882d00cb": {
+      "type": "video-with-text",
+      "settings": {
+        "title": "Reviving Indian perfume making",
+        "sub_title": "",
+        "sub_font": "1",
+        "style_title": "title_2",
+        "html_text": "<div class=\"text-align-left mobile-padding-top-50\"> \n<ul style=\"margin-left: 20px;list-style-position: outside;\">\n<li>  \nEmploying 15+ local artisans to handcraft the fragrances and package them.</li>\n<br> <li> \nMade using traditional art forms like the Deg-Bhapka technique, handmade paper making and screen-printing.\n</li> <br> \n<li> Chemical and alcohol free fragrances made from pure, natural and locally sourced raw materials.</li> \n <br> \n<li>  Conferred with the Geographical Indicator (GI) Tag by the Government of India for authentic Kannauj Perfume.</li> \n<br> \n</ul>\n</div>",
+        "image": "shopify://shop_images/IMG_20210524_143337_2_92d8922e-3276-4467-ba17-cf24437899c4.jpg",
+        "source": "2",
+        "video_url": "",
+        "file_name": "https://cdn.shopify.com/videos/c/o/v/030bf4e4fe5940deabbf1199808ab85d.mp4",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "400px",
+        "h_tb": "300px",
+        "h_mb": "250px",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_overlay": "#000000",
+        "cl_opacity": 0,
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -1391,18 +1391,6 @@
             "open_link": "_blank",
             "btn_style": "1"
           }
-        },
-        "97c9c584-aaed-4a25-a5fc-45aa6d6ad519": {
-          "type": "text_block",
-          "settings": {
-            "enable_image": true,
-            "title": "",
-            "text": "<p></p>",
-            "button_label": "",
-            "button_link": "",
-            "open_link": "_blank",
-            "btn_style": "1"
-          }
         }
       },
       "block_order": [
@@ -1415,8 +1403,7 @@
         "e0d64379-7d19-459c-b103-8e69484064a4",
         "abfbf6d4-2bc5-431d-b0f0-8fb357911d3b",
         "8ebf62e9-f1c1-4df9-be4d-f29777b46e65",
-        "a34cbd97-b7eb-4b66-98e8-8eac27c109c7",
-        "97c9c584-aaed-4a25-a5fc-45aa6d6ad519"
+        "a34cbd97-b7eb-4b66-98e8-8eac27c109c7"
       ],
       "settings": {
         "title": "The fragrances that everyone is talking about",
@@ -1523,10 +1510,10 @@
   "order": [
     "16357021760efbe511",
     "1652786331d27f7fc9",
+    "1652094241063968b2",
     "165157499155473c76",
     "1651836297f6fd5f44",
     "1653103537882d00cb",
-    "1652094241063968b2",
     "1651576375744217b4",
     "1660114381ed1a640f",
     "1581530479619"
