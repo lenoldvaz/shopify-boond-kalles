@@ -86,7 +86,7 @@
           "type": "btn",
           "settings": {
             "title": "Shop now",
-            "btn_link": "shopify://collections/gifting",
+            "btn_link": "shopify://products/boond-fragrances-pure-rose-water",
             "title2": "",
             "btn_link2": "",
             "btn_round": true,
