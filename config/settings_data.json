@@ -440,18 +440,11 @@
         "blocks": {
           "header_top-0": {
             "type": "text",
+            "disabled": true,
             "settings": {
-              "text": "",
+              "text": "Get a FREE Incense Cone Sampler on Orders above ₹5000",
               "hide": false,
-              "col": "3"
-            }
-          },
-          "header_top-1": {
-            "type": "text",
-            "settings": {
-              "text": "",
-              "hide": false,
-              "col": "6"
+              "col": "12"
             }
           },
           "header_top-2": {
@@ -463,12 +456,22 @@
               "open_link": "_self",
               "col": "3"
             }
+          },
+          "text2_7Uc34K": {
+            "type": "text2",
+            "settings": {
+              "text": "<p>Welcome customers to your store.;;; Welcome customers to your store 2.;;; Welcome customers to your store 3.</p>",
+              "effect": "1",
+              "au_time": 3.5,
+              "hide": false,
+              "col": "4"
+            }
           }
         },
         "block_order": [
           "header_top-0",
-          "header_top-1",
-          "header_top-2"
+          "header_top-2",
+          "text2_7Uc34K"
         ],
         "settings": {
           "IpFinder_api_key": "2drrfwafetmhb4tb",
