@@ -460,11 +460,11 @@
           "text2_7Uc34K": {
             "type": "text2",
             "settings": {
-              "text": "<p>Welcome customers to your store.;;; Welcome customers to your store 2.;;; Welcome customers to your store 3.</p>",
+              "text": "<p>Get a FREE Incense Cone Sampler on Orders above ₹5000</p>",
               "effect": "1",
               "au_time": 3.5,
               "hide": false,
-              "col": "4"
+              "col": "6"
             }
           }
         },
