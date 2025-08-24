@@ -1,1 +1,687 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"heading":{"type":"pages_heading","blocks":{"89b1a94e-2cf5-4075-a6af-0969fbaeae2c":{"type":"1","settings":{"color":"#ffffff"}}},"block_order":["89b1a94e-2cf5-4075-a6af-0969fbaeae2c"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Banner.jpg","parallax":false,"color":"#000000","overlay":35,"padding":100,"paddingmb":50,"bg_pos":"center center","bg_repeat":"no-repeat","bg_size":"cover","bg_att":"scroll"}},"slideshow_AiTqHb":{"type":"slideshow","blocks":{"img_M6g9dc":{"type":"img","settings":{"image":"shopify:\/\/shop_images\/NEW_Wedding_gifting_banner_11zon.jpg","pos_img":"center center","cl_img":"","link_img1":"","open_link":"_blank","caption_w":"2","cap_v_pos":50,"cap_h_pos":50,"txt_align":"tc_md","cap_v_pos_mb":50,"cap_h_pos_mb":50,"txt_align_mb":"tc","cl_overlay":"#000000","cl_opacity":0,"ani_img":"none","ani_txt":"none","bg_content_bl":false,"bg_content_cl":"#ffffff","bg_content_op":50,"content_pd":"40px 80px","content_pd_mb":"10px 20px","border_bl":false,"br_color":"#222222","br_style":"solid","br_pd":20,"br_pd_mb":10}},"txt_DMYiK6":{"type":"txt","disabled":true,"settings":{"heading_type":"h1","font":"f_heading","title":"Wedding gifting","color":"#ffffff","fw_text":500,"fs_text":24,"lh_text":0,"ls_text":0,"fs_mb_text":18,"lh_mb_text":0,"ls_mb_text":0,"hide":false,"sp":30,"sp_mb":20}}},"block_order":["img_M6g9dc","txt_DMYiK6"],"settings":{"se_height":"cus_h","use_custom_h":"1","h_des":"500px","h_tb":"450px","h_mb":"300px","des_mobile":"2","effect":"1","loop":true,"autoplay":false,"au_time":6,"au_hover":true,"button":false,"btn_vi":"1","btn_owl":"1","btn_color":"0","dot":true,"dot_owl":"1","dot_color":"1","layout":"nt_full","cl_bg":"","mg":"","pd":"","mg_mb":"","pd_mb":""}},"rich_text_GfM6MP":{"type":"rich_text","custom_css":["h3.section-title {font-weight: normal !important; font-size: 18px;}"],"settings":{"title":"Delightful and cherishable gifts for your wedding celebrations","sub_title":"","sub_font":"2","style_title":"title_1","ic_tt":"gem","show_clpr":false,"content":"","align":"tc","layout":"container","mg":"","pd":"30px,,0px,","mg_mb":"","pd_mb":"20px,,0px,"}},"brand_list_KX86Mm":{"type":"brand_list","blocks":{"brand_XwYmcC":{"type":"brand","settings":{"image":"shopify:\/\/shop_images\/logo_1A.jpg","url":"","open_link":"_blank"}},"brand_tftbE7":{"type":"brand","settings":{"image":"shopify:\/\/shop_images\/Logo_2A.jpg","url":"","open_link":"_blank"}},"brand_THzYDU":{"type":"brand","settings":{"image":"shopify:\/\/shop_images\/Logo_3A.jpg","url":"","open_link":"_blank"}},"brand_AR3Hjj":{"type":"brand","settings":{"image":"shopify:\/\/shop_images\/Logo_4A.jpg","url":"","open_link":"_blank"}},"brand_QnnfrY":{"type":"brand","settings":{"image":"shopify:\/\/shop_images\/Logo_5A.jpg","url":"","open_link":"_blank"}}},"block_order":["brand_XwYmcC","brand_tftbE7","brand_THzYDU","brand_AR3Hjj","brand_QnnfrY"],"settings":{"title":"Our Past Clients","sub_title":"","sub_font":"2","style_title":"title_1","ic_tt":"gem","show_clpr":false,"brand_layout":"2","cat_space":"30","col":"15","col_md":"4","col_mb":"6","brand_hover":"0","loop":false,"autoplay":false,"au_time":1,"au_hover":true,"button":false,"btn_vi":"1","btn_owl":"2","btn_color":"0","dot":true,"dot_owl":"1","dot_color":"1","layout":"wrap","cl_bg":"","mg":"","pd":"0px,,50px,","mg_mb":"","pd_mb":"0px,,30px,"}},"rich_text_48ebWx":{"type":"rich_text","settings":{"title":"Features","sub_title":"","sub_font":"2","style_title":"title_2","ic_tt":"gem","show_clpr":false,"content":"","align":"tc","layout":"container","mg":"","pd":"","mg_mb":"","pd_mb":""}},"image_text_VthrzB":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_1.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Natural fragrances made by hand using a centuries old technique","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"image_text_YCAMPm":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_2.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Customised gift boxes with the name of bride & groom","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"image_text_pLbcHq":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_3.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Special handwritten poem for the occasion","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"image_text_BzYFTc":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_5_831f0f73-eb2a-4dbc-ab5c-fed16010c3db.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Sustainable and eco friendly gifts","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"image_text_jhBjp9":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_4_3.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Multiple gift options for all budgets","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"image_text_eJ7zXK":{"type":"image_text","settings":{"image":"shopify:\/\/shop_images\/Feature_6.jpg","img_align":"center","img_position":"1","image_ratio":"auto","text_size2":"24,12","title":"Special discounts & express delivery","text":"","button_label":"Shop Now","button_link":"","open_link":"_blank","txt_align":"tc","use_shadow":false,"cl_txt":"dark","layout":"container","mg":"","pd":"0px,,30px,","mg_mb":"","pd_mb":"0px,0px,0px,0px"}},"feature_columns_b39jBW":{"type":"feature_columns","blocks":{"text_block_METnnh":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/6.jpg","title":"","text":"","button_label":"","button_link":"","open_link":"_blank","btn_style":"1"}},"text_block_TbUaAb":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/6.jpg","title":"","text":"","button_label":"","button_link":"","open_link":"_blank","btn_style":"1"}},"text_block_xGT4Ht":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/6.jpg","title":"","text":"","button_label":"","button_link":"","open_link":"_blank","btn_style":"1"}},"text_block_gHDXbm":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/6.jpg","title":"","text":"","button_label":"","button_link":"","open_link":"_blank","btn_style":"1"}},"text_block_3Dbj8A":{"type":"text_block","settings":{"enable_image":true,"image":"shopify:\/\/shop_images\/6.jpg","title":"","text":"","button_label":"","button_link":"","open_link":"_blank","btn_style":"1"}}},"block_order":["text_block_METnnh","text_block_TbUaAb","text_block_xGT4Ht","text_block_gHDXbm","text_block_3Dbj8A"],"disabled":true,"settings":{"title":"Testimonials","sub_title":"","sub_font":"2","style_title":"title_2","ic_tt":"gem","show_clpr":false,"round":0,"section_layout":"2","cat_space":"30","col":"4","col_md":"4","col_mb":"12","pos_text":"default","space":20,"align_text":"tl","fs_hd":22,"fs_txt":14,"w_img":0,"loop":true,"autoplay":false,"au_time":6,"au_hover":true,"button":false,"btn_vi":"1","btn_owl":"1","btn_color":"0","dot":true,"dot_owl":"1","dot_color":"1","layout":"container","cl_bg":"","mg":"","pd":"10px,,,","mg_mb":"","pd_mb":""}},"custom_section_BK9AJQ":{"type":"custom_section","blocks":{"html_eMJnmV":{"type":"html","settings":{"html":"<iframe data-tally-src=\"https:\/\/tally.so\/embed\/w8ybDr?alignLeft=1&amp;transparentBackground=1&amp;dynamicHeight=1\" loading=\"lazy\" width=\"100%\" height=\"799\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" title=\"Enquire about bulk orders\"><\/iframe>\n<script>var d=document,w=\"https:\/\/tally.so\/widgets\/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}<\/script>","cl":"6","cl_tb":"6","cl_mb":"12"}}},"block_order":["html_eMJnmV"],"settings":{"layout":"nt_full","cl_bg":"#ffffff","mg":"","pd":"0px,,20px,","mg_mb":"","pd_mb":"0px,,10px,"}},"custom_section_b9w9Ki":{"type":"custom_section","blocks":{"html_RLLrNe":{"type":"html","settings":{"html":"<h3 class=\"section-title tc pr flex fl_center al_center fs__24 title_2\"><span class=\"mr__10 ml__10\">Frequently Asked Questions<\/span><\/h3>","cl":"12","cl_tb":"12","cl_mb":"12"}}},"block_order":["html_RLLrNe"],"settings":{"layout":"nt_full","cl_bg":"#ffffff","mg":"0px,0px,-20px,0px","pd":"","mg_mb":"","pd_mb":""}},"faqs_kX7ij4":{"type":"faqs","blocks":{"faq_QWXjYR":{"type":"faq","settings":{"title":"I sent my enquiry by filling the form. What should I expect next?","content":"<p>Thank you for filling the form. We will respond to you within 48 hours.<\/p>"}},"faq_8z4Nbc":{"type":"faq","settings":{"title":"I don’t know what would be the most suitable product for me. Can you guide me?","content":"<p>Definitely, you can reach out to us on mail: team@boondfragrances.com or via whatsapp <a href=\"https:\/\/api.whatsapp.com\/send?phone=+917307953240&text=Hello\" target=\"_blank\" title=\"Whatsapp\">here.<br\/><\/a>We will guide you thoroughly.<\/p>"}},"faq_6EcrKN":{"type":"faq","settings":{"title":"How much time will customization take?","content":"<p>It depends upon the quantity of the order and the customizations that are needed. For further enquiry, you can reach out to us on team@boondfragrances.com or via whatsapp at <a href=\"https:\/\/api.whatsapp.com\/send?phone=+917307953240&text=Hello\" target=\"_blank\" title=\"Whatsapp\">+91 7307953240<\/a>.<\/p>"}},"faq_QUqfVW":{"type":"faq","settings":{"title":"Do I get a discount for custom orders?","content":"<p>Definitely, we do give discount on custom orders.<\/p>"}},"faq_9jLhXM":{"type":"faq","settings":{"title":"What’s the MOQ for getting a discount?","content":"<p>We can offer a discount on orders starting at 10 or more items.<\/p>"}},"faq_TXzTr3":{"type":"faq","settings":{"title":"Do you ship bulk orders outside India?","content":"<p>Yes, we do ship bulk orders internationally.<\/p>"}},"faq_VCcLyB":{"type":"faq","settings":{"title":"What if some of my products get damaged in shipping?","content":"<p>We do our best to ensure that our products reach your safely. Please inspect your order within 36 hours of delivery and reach out to us at team@boondfragrances.com in case of any defects, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.<\/p>"}}},"block_order":["faq_QWXjYR","faq_8z4Nbc","faq_6EcrKN","faq_QUqfVW","faq_9jLhXM","faq_TXzTr3","faq_VCcLyB"],"custom_css":[".shopify-tabs.sp-tabs p {margin-bottom: 0px !important;}",".sp-tab-content {padding: 5px 18px !important;}","@media only screen and (max-width: 600px) {.sp-tab-content {padding: 5px 10px !important; }}"],"settings":{"auto":true,"title":""}},"custom_html_zXfpAe":{"type":"custom_html","disabled":true,"settings":{"code":"<div class=\"custom-sticky-section\">\n<button id=\"myBtn\" class=\"button custom-qinry-button\" aria-label=\"Send your enquiry\">Send your enquiry\n<\/button>\n<\/div>","css":".custom-sticky-section {\n    text-align: center;\n    bottom: 0;\n    box-shadow: 1px -5px 9px 2px #0000001f;\n    transition: transform .25s ease, -webkit-transform .25s ease;\n    position: fixed;\n    background: #fff;\n    left: 0;\n    right: 0;\n    padding: 10px;\n    z-index: 9999;\n}\nbutton.button.custom-qinry-button {\n    background: #b20000;\n    color: white;\n    border-color: white;\n    font-size: 18px;\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\na.wa-custom-float {\n    display: none;\n}","layout":"nt_full","mg":"","pd":"","mg_mb":"","pd_mb":""}},"custom_liquid_zcYjhi":{"type":"custom-liquid","settings":{"custom_liquid":"<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n    <span class=\"close\">×<\/span>\n\n<div class=\"wrap_title mb__25\">\n<h3 class=\"section-title tc pr flex fl_center al_center fs__24 title_1\"><span class=\"mr__10 ml__10\">Enquire about bulk orders<\/span><\/h3>\n<span class=\"dn tt_divider\"><span><\/span><i class=\"dn clprfalse title_1 la-gem\"><\/i><span><\/span><\/span><span class=\"section-subtitle db tc sub-title\">We respond to all enquiries within 48 hours<\/span>\n<\/div>\n    <h5>\n<a href=\"https:\/\/api.whatsapp.com\/send?phone=+917307953240&amp;text=Hello\" target=\"_blank\" class=\"custom_p_deco\"> By Whatsapp <i class=\"facl facl-whatsapp fs__12\"><\/i> <\/a> <\/h5>\n OR\n <h5 class=\"custom_p_deco\" onclick=\"show_form();\">By filling  the form ↓<\/h5>\n{formbuilder:ODM2Mjg=}\n  <\/div>\n\n<\/div>","layout":"nt_full","cl_bg":"#ffffff","mg":"","pd":"","mg_mb":"","pd_mb":""}},"custom_html_VgApbC":{"type":"custom_html","settings":{"code":"","css":"\/* The Modal (background) *\/\n.modal {\n  display: none; \/* Hidden by default *\/\n  position: fixed; \/* Stay in place *\/\n  z-index: 11111; \/* Sit on top *\/\n  left: 0;\n  top: 0;\n  width: 100%; \/* Full width *\/\n  height: 100%; \/* Full height *\/\n  overflow: auto; \/* Enable scroll if needed *\/\n  background-color: rgb(0,0,0); \/* Fallback color *\/\n  background-color: rgba(0,0,0,0.4); \/* Black w\/ opacity *\/\n}\n\n\/* Modal Content\/Box *\/\n.modal-content {\ntext-align: center;\n  background-color: #fefefe;\n  margin: 3% auto; \/* 15% from the top and centered *\/\n  padding: 20px;\n  border: 1px solid #888;\n  width: 60%; \/* Could be more or less, depending on screen size *\/\n}\n\n\/* The Close Button *\/\n.close {\n  color: #aaa;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n  color: black;\n  text-decoration: none;\n  cursor: pointer;\n}\n.type_image_text h3 {\n    font-size: 18px;\n    font-weight: normal !important;\n}\n@media only screen and (max-width: 600px) {\n.modal-content { \n  width: 95%; \n}\n    .txt_col_img {\n        margin-top: 0;\n    }\n}\ndiv#shopify-section-cookies_law {\n    z-index: 11111;\n}","layout":"container","mg":"","pd":"","mg_mb":"","pd_mb":""}}},"order":["main","heading","slideshow_AiTqHb","rich_text_GfM6MP","brand_list_KX86Mm","rich_text_48ebWx","image_text_VthrzB","image_text_YCAMPm","image_text_pLbcHq","image_text_BzYFTc","image_text_jhBjp9","image_text_eJ7zXK","feature_columns_b39jBW","custom_section_BK9AJQ","custom_section_b9w9Ki","faqs_kX7ij4","custom_html_zXfpAe","custom_liquid_zcYjhi","custom_html_VgApbC"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "heading": {
+      "type": "pages_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Banner.jpg",
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 35,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "slideshow_AiTqHb": {
+      "type": "slideshow",
+      "blocks": {
+        "img_M6g9dc": {
+          "type": "img",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Wedding_gifting_banner_11zon.jpg",
+            "image_mb": "shopify://shop_images/WhatsApp_Image_2025-08-24_at_11.41.12.jpg",
+            "pos_img": "center center",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 50,
+            "txt_align_mb": "tc",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none",
+            "bg_content_bl": false,
+            "bg_content_cl": "#ffffff",
+            "bg_content_op": 50,
+            "content_pd": "40px 80px",
+            "content_pd_mb": "10px 20px",
+            "border_bl": false,
+            "br_color": "#222222",
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10
+          }
+        },
+        "txt_DMYiK6": {
+          "type": "txt",
+          "disabled": true,
+          "settings": {
+            "heading_type": "h1",
+            "font": "f_heading",
+            "title": "Wedding gifting",
+            "color": "#ffffff",
+            "fw_text": 500,
+            "fs_text": 24,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 18,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false,
+            "sp": 30,
+            "sp_mb": 20
+          }
+        }
+      },
+      "block_order": [
+        "img_M6g9dc",
+        "txt_DMYiK6"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "500px",
+        "h_tb": "450px",
+        "h_mb": "300px",
+        "des_mobile": "2",
+        "effect": "1",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "nt_full",
+        "cl_bg": "",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "rich_text_GfM6MP": {
+      "type": "rich_text",
+      "custom_css": [
+        "h3.section-title {font-weight: normal !important; font-size: 18px;}"
+      ],
+      "settings": {
+        "title": "Delightful and cherishable gifts for your wedding celebrations",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "",
+        "align": "tc",
+        "layout": "container",
+        "mg": "",
+        "pd": "30px,,0px,",
+        "mg_mb": "",
+        "pd_mb": "20px,,0px,"
+      }
+    },
+    "brand_list_KX86Mm": {
+      "type": "brand_list",
+      "blocks": {
+        "brand_XwYmcC": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/logo_1A.jpg",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "brand_tftbE7": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/Logo_2A.jpg",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "brand_THzYDU": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/Logo_3A.jpg",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "brand_AR3Hjj": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/Logo_4A.jpg",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "brand_QnnfrY": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify://shop_images/Logo_5A.jpg",
+            "url": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "brand_XwYmcC",
+        "brand_tftbE7",
+        "brand_THzYDU",
+        "brand_AR3Hjj",
+        "brand_QnnfrY"
+      ],
+      "settings": {
+        "title": "Our Past Clients",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "brand_layout": "2",
+        "cat_space": "30",
+        "col": "15",
+        "col_md": "4",
+        "col_mb": "6",
+        "brand_hover": "0",
+        "loop": false,
+        "autoplay": false,
+        "au_time": 1,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "",
+        "pd": "0px,,50px,",
+        "mg_mb": "",
+        "pd_mb": "0px,,30px,"
+      }
+    },
+    "rich_text_48ebWx": {
+      "type": "rich_text",
+      "settings": {
+        "title": "Features",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_2",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "",
+        "align": "tc",
+        "layout": "container",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "image_text_VthrzB": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_1.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Natural fragrances made by hand using a centuries old technique",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "image_text_YCAMPm": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_2.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Customised gift boxes with the name of bride & groom",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "image_text_pLbcHq": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_3.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Special handwritten poem for the occasion",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "image_text_BzYFTc": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_5_831f0f73-eb2a-4dbc-ab5c-fed16010c3db.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Sustainable and eco friendly gifts",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "image_text_jhBjp9": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_4_3.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Multiple gift options for all budgets",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "image_text_eJ7zXK": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify://shop_images/Feature_6.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "24,12",
+        "title": "Special discounts & express delivery",
+        "text": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "",
+        "pd": "0px,,30px,",
+        "mg_mb": "",
+        "pd_mb": "0px,0px,0px,0px"
+      }
+    },
+    "feature_columns_b39jBW": {
+      "type": "feature_columns",
+      "blocks": {
+        "text_block_METnnh": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "text_block_TbUaAb": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "text_block_xGT4Ht": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "text_block_gHDXbm": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "text_block_3Dbj8A": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/6.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_METnnh",
+        "text_block_TbUaAb",
+        "text_block_xGT4Ht",
+        "text_block_gHDXbm",
+        "text_block_3Dbj8A"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Testimonials",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_2",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "2",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tl",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "",
+        "pd": "10px,,,",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "custom_section_BK9AJQ": {
+      "type": "custom_section",
+      "blocks": {
+        "html_eMJnmV": {
+          "type": "html",
+          "settings": {
+            "html": "<iframe data-tally-src=\"https://tally.so/embed/w8ybDr?alignLeft=1&amp;transparentBackground=1&amp;dynamicHeight=1\" loading=\"lazy\" width=\"100%\" height=\"799\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" title=\"Enquire about bulk orders\"></iframe>\n<script>var d=document,w=\"https://tally.so/widgets/embed.js\",v=function(){\"undefined\"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll(\"iframe[data-tally-src]:not([src])\").forEach((function(e){e.src=e.dataset.tallySrc}))};if(\"undefined\"!=typeof Tally)v();else if(d.querySelector('script[src=\"'+w+'\"]')==null){var s=d.createElement(\"script\");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>",
+            "cl": "6",
+            "cl_tb": "6",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "html_eMJnmV"
+      ],
+      "settings": {
+        "layout": "nt_full",
+        "cl_bg": "#ffffff",
+        "mg": "",
+        "pd": "0px,,20px,",
+        "mg_mb": "",
+        "pd_mb": "0px,,10px,"
+      }
+    },
+    "custom_section_b9w9Ki": {
+      "type": "custom_section",
+      "blocks": {
+        "html_RLLrNe": {
+          "type": "html",
+          "settings": {
+            "html": "<h3 class=\"section-title tc pr flex fl_center al_center fs__24 title_2\"><span class=\"mr__10 ml__10\">Frequently Asked Questions</span></h3>",
+            "cl": "12",
+            "cl_tb": "12",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "html_RLLrNe"
+      ],
+      "settings": {
+        "layout": "nt_full",
+        "cl_bg": "#ffffff",
+        "mg": "0px,0px,-20px,0px",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "faqs_kX7ij4": {
+      "type": "faqs",
+      "blocks": {
+        "faq_QWXjYR": {
+          "type": "faq",
+          "settings": {
+            "title": "I sent my enquiry by filling the form. What should I expect next?",
+            "content": "<p>Thank you for filling the form. We will respond to you within 48 hours.</p>"
+          }
+        },
+        "faq_8z4Nbc": {
+          "type": "faq",
+          "settings": {
+            "title": "I don’t know what would be the most suitable product for me. Can you guide me?",
+            "content": "<p>Definitely, you can reach out to us on mail: team@boondfragrances.com or via whatsapp <a href=\"https://api.whatsapp.com/send?phone=+917307953240&text=Hello\" target=\"_blank\" title=\"Whatsapp\">here.<br/></a>We will guide you thoroughly.</p>"
+          }
+        },
+        "faq_6EcrKN": {
+          "type": "faq",
+          "settings": {
+            "title": "How much time will customization take?",
+            "content": "<p>It depends upon the quantity of the order and the customizations that are needed. For further enquiry, you can reach out to us on team@boondfragrances.com or via whatsapp at <a href=\"https://api.whatsapp.com/send?phone=+917307953240&text=Hello\" target=\"_blank\" title=\"Whatsapp\">+91 7307953240</a>.</p>"
+          }
+        },
+        "faq_QUqfVW": {
+          "type": "faq",
+          "settings": {
+            "title": "Do I get a discount for custom orders?",
+            "content": "<p>Definitely, we do give discount on custom orders.</p>"
+          }
+        },
+        "faq_9jLhXM": {
+          "type": "faq",
+          "settings": {
+            "title": "What’s the MOQ for getting a discount?",
+            "content": "<p>We can offer a discount on orders starting at 10 or more items.</p>"
+          }
+        },
+        "faq_TXzTr3": {
+          "type": "faq",
+          "settings": {
+            "title": "Do you ship bulk orders outside India?",
+            "content": "<p>Yes, we do ship bulk orders internationally.</p>"
+          }
+        },
+        "faq_VCcLyB": {
+          "type": "faq",
+          "settings": {
+            "title": "What if some of my products get damaged in shipping?",
+            "content": "<p>We do our best to ensure that our products reach your safely. Please inspect your order within 36 hours of delivery and reach out to us at team@boondfragrances.com in case of any defects, damaged or if you receive the wrong item, so that we can evaluate the issue and make it right.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_QWXjYR",
+        "faq_8z4Nbc",
+        "faq_6EcrKN",
+        "faq_QUqfVW",
+        "faq_9jLhXM",
+        "faq_TXzTr3",
+        "faq_VCcLyB"
+      ],
+      "custom_css": [
+        ".shopify-tabs.sp-tabs p {margin-bottom: 0px !important;}",
+        ".sp-tab-content {padding: 5px 18px !important;}",
+        "@media only screen and (max-width: 600px) {.sp-tab-content {padding: 5px 10px !important; }}"
+      ],
+      "settings": {
+        "auto": true,
+        "title": ""
+      }
+    },
+    "custom_html_zXfpAe": {
+      "type": "custom_html",
+      "disabled": true,
+      "settings": {
+        "code": "<div class=\"custom-sticky-section\">\n<button id=\"myBtn\" class=\"button custom-qinry-button\" aria-label=\"Send your enquiry\">Send your enquiry\n</button>\n</div>",
+        "css": ".custom-sticky-section {\n    text-align: center;\n    bottom: 0;\n    box-shadow: 1px -5px 9px 2px #0000001f;\n    transition: transform .25s ease, -webkit-transform .25s ease;\n    position: fixed;\n    background: #fff;\n    left: 0;\n    right: 0;\n    padding: 10px;\n    z-index: 9999;\n}\nbutton.button.custom-qinry-button {\n    background: #b20000;\n    color: white;\n    border-color: white;\n    font-size: 18px;\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\na.wa-custom-float {\n    display: none;\n}",
+        "layout": "nt_full",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "custom_liquid_zcYjhi": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n    <span class=\"close\">×</span>\n\n<div class=\"wrap_title mb__25\">\n<h3 class=\"section-title tc pr flex fl_center al_center fs__24 title_1\"><span class=\"mr__10 ml__10\">Enquire about bulk orders</span></h3>\n<span class=\"dn tt_divider\"><span></span><i class=\"dn clprfalse title_1 la-gem\"></i><span></span></span><span class=\"section-subtitle db tc sub-title\">We respond to all enquiries within 48 hours</span>\n</div>\n    <h5>\n<a href=\"https://api.whatsapp.com/send?phone=+917307953240&amp;text=Hello\" target=\"_blank\" class=\"custom_p_deco\"> By Whatsapp <i class=\"facl facl-whatsapp fs__12\"></i> </a> </h5>\n OR\n <h5 class=\"custom_p_deco\" onclick=\"show_form();\">By filling  the form ↓</h5>\n{formbuilder:ODM2Mjg=}\n  </div>\n\n</div>",
+        "layout": "nt_full",
+        "cl_bg": "#ffffff",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "custom_html_VgApbC": {
+      "type": "custom_html",
+      "settings": {
+        "code": "",
+        "css": "/* The Modal (background) */\n.modal {\n  display: none; /* Hidden by default */\n  position: fixed; /* Stay in place */\n  z-index: 11111; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content/Box */\n.modal-content {\ntext-align: center;\n  background-color: #fefefe;\n  margin: 3% auto; /* 15% from the top and centered */\n  padding: 20px;\n  border: 1px solid #888;\n  width: 60%; /* Could be more or less, depending on screen size */\n}\n\n/* The Close Button */\n.close {\n  color: #aaa;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n  color: black;\n  text-decoration: none;\n  cursor: pointer;\n}\n.type_image_text h3 {\n    font-size: 18px;\n    font-weight: normal !important;\n}\n@media only screen and (max-width: 600px) {\n.modal-content { \n  width: 95%; \n}\n    .txt_col_img {\n        margin-top: 0;\n    }\n}\ndiv#shopify-section-cookies_law {\n    z-index: 11111;\n}",
+        "layout": "container",
+        "mg": "",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "heading",
+    "slideshow_AiTqHb",
+    "rich_text_GfM6MP",
+    "brand_list_KX86Mm",
+    "rich_text_48ebWx",
+    "image_text_VthrzB",
+    "image_text_YCAMPm",
+    "image_text_pLbcHq",
+    "image_text_BzYFTc",
+    "image_text_jhBjp9",
+    "image_text_eJ7zXK",
+    "feature_columns_b39jBW",
+    "custom_section_BK9AJQ",
+    "custom_section_b9w9Ki",
+    "faqs_kX7ij4",
+    "custom_html_zXfpAe",
+    "custom_liquid_zcYjhi",
+    "custom_html_VgApbC"
+  ]
+}
